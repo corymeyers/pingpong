@@ -1,25 +1,22 @@
 describe('pingPong', function(limit) {
   it("counts up to the 'limit'", function () {
-    expect(limit(5)).to.eql([1, 2, 3, 4, 5]);
+    expect(pingPong(5)).to.eql([1, 2, 3, 4, 5]);
   });
 
 describe('pingPong', function(limit) {
-  it("checks if each number is evenly divisible by 15 and replaces it with PINGPONG", function () {
-    expect(limit(15)).to.equal(PINGPONG);
+  it("replaces each number that is evenly divisible by 3 and replaces it with PING", function () {
+    expect(pingPong(15)).to.equal([1, 2, "PING", 4, 5, "PING", 7, 8, "PING", 10]);
   });
 
 describe('pingPong', function(limit) {
-  it("checks if each number is evenly divisible by 5 and not by 15 and replaces it with PONG", function () {
-    expect(limit(10)).to.equal(PONG);
+  it("replaces each number that is evenly divisible by 5 with PONG", function () {
+    expect(pingPong(10)).to.equal([1, 2, "PING", 4, "PONG", "PING", 7, 8, "PING", "PONG"]);
   });
 
-
-
-
-
-
-
-
+describe('pingPong', function(limit) {
+  it("replaces each number that is evenly divisible by 15 with PINGPONG", function () {
+    expect(pingPong(15)).to.equal([1, 2, "PING", 4, "PONG", "PING", 7, 8, "PING", "PONG", 11, "PING", 13, 14, "PINGPONG"]);
+  });
 });
 
 
