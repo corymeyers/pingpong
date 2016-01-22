@@ -1,18 +1,16 @@
 var pingPong = function(limit) {
   var result = [];
 
-  for (var i = 0; i <= limit; i +=1) {
+  for (var i = 0; i < limit; i +=1) {
     if (limit%15 === 0) {
-        limit.replace(limit, "PINGPONG");
-       } else if {
-         (limit%5 ===0) && !(limit%15 ===0) {
+         limit.replace(limit, "PINGPONG");
+       } else if (limit%5 ===0 && !limit%15 ===0) {
          limit.replace(limit, "PONG");
-       } else if {
-         (limit%3 ===0) && !(limit%15 ===0) {
+       } else if (limit%3 ===0 && !limit%15 ===0) {
          limit.replace(limit, "PING");
-          }
        }
-       }
+
+
    result.push(i);
   }
   return result;
@@ -22,7 +20,7 @@ var pingPong = function(limit) {
 $(document).ready(function(){
   $("form#inputForm").submit(function(event) {
     var limit = parseInt($("input#limit").val());
-    // var finalResult = function pingPong(limit);
+    var result = function pingPong(limit);
 
     $(".result").text(result);
     event.preventDefault();
