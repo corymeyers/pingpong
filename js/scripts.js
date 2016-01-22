@@ -1,9 +1,20 @@
 var pingPong = function(limit) {
-  return false;
+  var result = [];
+
+for (var i = 0; i <= limit; i +=1)
+  return result;
 }
 
 
+$(document).ready(function(){
+  $("form#inputForm").submit(function(event) {
+    var limit = parseInt($("input#limit").val());
+    var finalResult = $;
 
+    $(".result").text(finalResult);
+    event.preventDefault();
+  });
+});
 
 
 
