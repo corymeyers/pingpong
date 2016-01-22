@@ -2,6 +2,20 @@ describe('pingPong', function(limit) {
   it("counts up to the 'limit'", function () {
     expect(limit(5)).to.eql([1, 2, 3, 4, 5]);
   });
+
+  describe('pingPong', function(limit) {
+    it("checks if each number is evenly divisible by 15 and replaes it with pingpong", function () {
+      expect(limit(30)).to.equall(true);
+    });
+
+
+
+
+
+
+
+
+
 });
 
 
