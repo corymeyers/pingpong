@@ -12,11 +12,22 @@
     <form id="inputForm">
       <div>
         <label for="limit">Enter the number you would like to count up towards:</label>
-        <p><input id="limit" type="text"></p>
+        <p><input id="limit" type="text">
+        </p>
       </div>
 
-        <button type="submit" class="btn">Find out!</button>
+        <button type="submit" class="btn" onclick="clearForm()" value="Reset form">Find out!</button>
     </form>
+
+    <script>
+      function clearForm() {
+          document.getElementById("myForm").reset();
+          }
+    </script>
+
+
+
+
 
     <div id="result">
       <p>Your number string is:</p>
