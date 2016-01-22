@@ -1,4 +1,8 @@
-
+describe('pingPong', function(limit) {
+  it("counts up to the 'limit'", function () {
+    expect(limit(5)).to.eql([1, 2, 3, 4, 5]);
+  });
+});
 
 
 
