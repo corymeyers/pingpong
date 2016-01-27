@@ -1,21 +1,18 @@
 describe('pingPong', function(limit) {
-  it("counts up to the 'limit'", function () {
-    expect(pingPong(5)).to.eql([1, 2, 3, 4, 5]);
+  it("counts up to the 'limit'", function() {
+    expect(pingPong(2)).to.eql([1, 2]);
   });
 
-describe('pingPong', function(limit) {
-  it("replaces each number that is evenly divisible by 3 and replaces it with PING", function () {
-    expect(pingPong(15)).to.equal([1, 2, "PING", 4, 5, "PING", 7, 8, "PING", 10]);
+  it("replaces each number that is evenly divisible by 3 and replaces it with PING", function() {
+    expect(pingPong(3)).to.eql([1, 2, "PING"]);
   });
 
-describe('pingPong', function(limit) {
-  it("replaces each number that is evenly divisible by 5 with PONG", function () {
-    expect(pingPong(10)).to.equal([1, 2, "PING", 4, "PONG", "PING", 7, 8, "PING", "PONG"]);
+  it("replaces each number that is evenly divisible by 5 with PONG", function() {
+    expect(pingPong(5)).to.eql([1, 2, "PING", 4, "PONG"]);
   });
 
-describe('pingPong', function(limit) {
-  it("replaces each number that is evenly divisible by 15 with PINGPONG", function () {
-    expect(pingPong(15)).to.equal([1, 2, "PING", 4, "PONG", "PING", 7, 8, "PING", "PONG", 11, "PING", 13, 14, "PINGPONG"]);
+  it("replaces each number that is evenly divisible by 15 with PINGPONG", function() {
+    expect(pingPong(15)).to.eql([1, 2, "PING", 4, "PONG", "PING", 7, 8, "PING", "PONG", 11, "PING", 13, 14, "PINGPONG"]);
   });
 });
 
