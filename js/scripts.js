@@ -10,7 +10,6 @@ function pingPong(limit) {
          result.push("PING");
        } else
          result.push(i);
-
   }
   return result;
 }
@@ -20,7 +19,7 @@ $(document).ready(function(){
     var limit = parseInt($("input#limit").val());
     var result = pingPong(limit);
 
-    $(".result").text.append(result);
+    $(".result").text(result);
     event.preventDefault();
   });
 });
